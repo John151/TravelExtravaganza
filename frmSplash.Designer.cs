@@ -28,74 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSplash));
             this.btnCaribbean = new System.Windows.Forms.Button();
             this.btnNorway = new System.Windows.Forms.Button();
             this.btnLakeMinnetonka = new System.Windows.Forms.Button();
-            this.picLogo = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCaribbean
             // 
-            this.btnCaribbean.Location = new System.Drawing.Point(12, 150);
+            this.btnCaribbean.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCaribbean.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCaribbean.BackgroundImage")));
+            this.btnCaribbean.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCaribbean.Location = new System.Drawing.Point(12, 12);
             this.btnCaribbean.Name = "btnCaribbean";
-            this.btnCaribbean.Size = new System.Drawing.Size(393, 87);
+            this.btnCaribbean.Size = new System.Drawing.Size(360, 162);
             this.btnCaribbean.TabIndex = 0;
-            this.btnCaribbean.Text = "Caribbean";
             this.btnCaribbean.UseVisualStyleBackColor = true;
             this.btnCaribbean.Click += new System.EventHandler(this.btnCaribbean_Click);
             // 
             // btnNorway
             // 
-            this.btnNorway.Location = new System.Drawing.Point(12, 243);
+            this.btnNorway.BackColor = System.Drawing.SystemColors.Control;
+            this.btnNorway.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNorway.BackgroundImage")));
+            this.btnNorway.Location = new System.Drawing.Point(12, 180);
             this.btnNorway.Name = "btnNorway";
-            this.btnNorway.Size = new System.Drawing.Size(393, 87);
+            this.btnNorway.Size = new System.Drawing.Size(360, 162);
             this.btnNorway.TabIndex = 1;
-            this.btnNorway.Text = "Norway";
-            this.btnNorway.UseVisualStyleBackColor = true;
+            this.btnNorway.UseVisualStyleBackColor = false;
             // 
             // btnLakeMinnetonka
             // 
-            this.btnLakeMinnetonka.Location = new System.Drawing.Point(12, 336);
+            this.btnLakeMinnetonka.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLakeMinnetonka.BackgroundImage")));
+            this.btnLakeMinnetonka.Location = new System.Drawing.Point(12, 348);
             this.btnLakeMinnetonka.Name = "btnLakeMinnetonka";
-            this.btnLakeMinnetonka.Size = new System.Drawing.Size(393, 87);
+            this.btnLakeMinnetonka.Size = new System.Drawing.Size(360, 162);
             this.btnLakeMinnetonka.TabIndex = 2;
-            this.btnLakeMinnetonka.Text = "Lake Minnetonka";
             this.btnLakeMinnetonka.UseVisualStyleBackColor = true;
-            // 
-            // picLogo
-            // 
-            this.picLogo.Location = new System.Drawing.Point(12, 12);
-            this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(393, 132);
-            this.picLogo.TabIndex = 3;
-            this.picLogo.TabStop = false;
             // 
             // btnExit
             // 
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Location = new System.Drawing.Point(13, 430);
+            this.btnExit.Location = new System.Drawing.Point(12, 516);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(392, 40);
+            this.btnExit.Size = new System.Drawing.Size(360, 40);
             this.btnExit.TabIndex = 4;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(417, 482);
+            this.ClientSize = new System.Drawing.Size(384, 564);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.btnLakeMinnetonka);
             this.Controls.Add(this.btnNorway);
             this.Controls.Add(this.btnCaribbean);
             this.Name = "frmSplash";
             this.Text = "Travel Extravaganza!";
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -105,7 +98,6 @@
         private System.Windows.Forms.Button btnCaribbean;
         private System.Windows.Forms.Button btnNorway;
         private System.Windows.Forms.Button btnLakeMinnetonka;
-        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Button btnExit;
     }
 }

@@ -277,7 +277,7 @@
         private System.Windows.Forms.CheckBox chkService4;
         private System.Windows.Forms.CheckBox chkService5;
         private System.Windows.Forms.CheckBox chkService6;
-        private System.Windows.Forms.Label lblTotalPrice;
+        public System.Windows.Forms.Label lblTotalPrice;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picBackground;
         private System.Windows.Forms.PictureBox picService2;
